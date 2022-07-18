@@ -1,5 +1,6 @@
 import React from 'react'
 import {Col, Container, Row, Form, Button, Alert} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Signin = () => {
   return (
@@ -22,7 +23,7 @@ const Signin = () => {
                         <Button variant="primary" size="md">Signin</Button>
                     </div>
                     <Alert className='alertStyle'>
-                        Dont have an account
+                        Dont have an account? <Link to="/signup">Create Account</Link>
                     </Alert>
                 </Form>
             </Col>
